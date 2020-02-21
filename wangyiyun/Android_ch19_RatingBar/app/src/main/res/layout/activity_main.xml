@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rb1"
+            android:numStars="5" android:rating="1" android:stepSize="0.5"/>
+
+    <!--
+    设置星星大小：
+        中：  style="?android:attr/ratingBarStyleIndicator"
+    -->
+    <RatingBar
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/rb1"
+            android:id="@+id/rb2" tools:ignore="MissingConstraints"
+            style="?android:attr/ratingBarStyleIndicator"/>
+
+    <!--
+        设置星星大小：
+        小： style="?android:attr/ratingBarStyleSmall"
+    -->
+    <RatingBar
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/rb2"
+            android:id="@+id/rb3" tools:ignore="MissingConstraints"
+            style="?android:attr/ratingBarStyleSmall"
+            android:rating="5"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/rb3"
+            android:textSize="6mm"
+            android:id="@+id/tv"/>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+    <TextView
+            android:text="dfakjdfklasdfkasjfsda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView" tools:ignore="MissingConstraints"/>
+
+    <RadioGroup
+            android:id="@+id/radioGroup"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints">
+        <RadioButton
+                android:text="imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" tools:layout_editor_absoluteY="33dp"
+                tools:layout_editor_absoluteX="0dp" android:id="@+id/r1"/>
+        <RadioButton
+                android:text="checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" tools:layout_editor_absoluteY="106dp"
+                tools:layout_editor_absoluteX="35dp" android:id="@+id/r2"/>
+        <RadioButton
+                android:text="listView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" tools:layout_editor_absoluteY="160dp"
+                tools:layout_editor_absoluteX="35dp" android:id="@+id/r3"/>
+    </RadioGroup>
+
+
+</android.support.constraint.ConstraintLayout>

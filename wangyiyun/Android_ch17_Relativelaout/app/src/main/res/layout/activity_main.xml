@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <!--
+    android:layout_alignParentLeft:  相对于父级控件居左
+    android:layout_alignParentTop： 相对于低级控件居上
+    作用：相对于父极控件的左边和左上方
+    -->
+    <Button
+            android:text="btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:id="@+id/btn1"/>
+
+    <!--
+    android:layout_toRightOf:  相对于btn1的右边
+    android:layout_below： 相对于btn1 的下方
+    作用： 相对于btn1的右边和下方
+    -->
+    <Button
+            android:text="btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/btn1"
+            android:layout_below="@+id/btn1"
+            android:id="@+id/btn2"/>
+
+    <!--
+       android:layout_toRightOf： 相对于btn2的右边
+       android:layout_above： 相对于btn2的上方
+       作用：相对于btn2的右边和上方
+    -->
+    <Button
+            android:text="btn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/btn2"
+            android:layout_above="@+id/btn2"
+            android:id="@+id/btn3"/>
+
+    <!--
+        android:layout_toLeftOf: 相对于btn2的左方
+        android:layout_below： 相对于btn2的下方
+        作用： 相对于btn2的左边和下方
+    -->
+    <Button
+            android:text="btn4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/btn2"
+            android:layout_below="@+id/btn2"
+            android:id="@+id/btn4"/>
+
+
+    <!--
+    android:layout_toRightOf:  相对于btn2的右方
+    android:layout_below： 相对于btn2的下方
+    -->
+    <Button
+            android:text="btn5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/btn2"
+            android:layout_below="@+id/btn2"
+            android:id="@+id/btn5"/>
+</RelativeLayout>
